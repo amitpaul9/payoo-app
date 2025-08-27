@@ -13,11 +13,10 @@
 </head>
 <body class="bg-[#f4f5f7]">
 
-
+<!-- card section -->
   <div class="max-w-lg bg-white mx-auto rounded-b-xl p-3">
 
   <div class="flex justify-between items-center border-b-1 border-gray-400 p-3">
-
         <div class="flex">
         <img src="assets/Group.png" class="h-[50px]" alt="">
         <div class="ml-3">
@@ -39,32 +38,32 @@
 
     <div class=" grid grid-cols-3 max-w-lg mx-auto gap-4"> 
 
-        <div class="text-center py-5 rounded-xl border-2 border-gray-200">
+        <div id="add-money-btn" class="text-center py-5 rounded-xl border-2 border-gray-200">
             <img src="assets/wallet1.png" alt="" class="mx-auto">
             <h2>Add Money</h2>
         </div>
 
-        <div class="text-center py-5 rounded-xl border-2 border-gray-200">
+        <div id="cash-out-btn" class="text-center py-5 rounded-xl border-2 border-gray-200">
             <img src="assets/send1.png" alt="" class="mx-auto">
             <h2>Cashout</h2>
         </div>
 
-        <div class="text-center py-5 rounded-xl  border-2 border-gray-200">
+        <div id="transfer-money-btn" class="text-center py-5 rounded-xl  border-2 border-gray-200">
             <img src="assets/money1.png" alt="" class="mx-auto ">
             <h2>Transfer Money</h2>
         </div>
 
-        <div class="text-center py-5 rounded-xl border-2 border-gray-200">
+        <div id="get-bonus-btn" class="text-center py-5 rounded-xl border-2 border-gray-200">
             <img src="assets/bonus1.png" alt="" class="mx-auto">
             <h2>Get Bonus</h2>
         </div>
 
-        <div class="text-center py-5 rounded-xl border-2 border-gray-200">
+        <div id="pay-bill-btn" class="text-center py-5 rounded-xl border-2 border-gray-200">
             <img src="assets/purse1.png" alt="" class="mx-auto">
             <h2>Pay Bill</h2>
         </div>
 
-        <div class="text-center py-5 rounded-xl border-2 border-gray-200">
+        <div id="transantion-btn" class="text-center py-5 rounded-xl border-2 border-gray-200">
             <img src="assets/transaction1.png" alt="" class="mx-auto">
             <h2>Transactions</h2>
         </div>
@@ -74,12 +73,14 @@
 
   </div>
 
-
+<!-- All form section -->
 <div class="all-form-dection max-w-lg mx-auto">
+
+
     <!-- add money -->
-     <div>
+     <div id="add-money" style="display: none;">
         <h1 class="my-5 mx-1 font-bold">Add Money</h1>
-        <form action="" class="bg-white rounded-2xl p-8">
+        <form action="" class="bg-white rounded-2xl p-8 mb-5">
             <div class="mb-3">
                 <h1 class="font-semibold">Select a Bank</h1>
                 <select class="select bg-[#f4f5f7] mt-2 rounded-3xl w-full" id="bank">
@@ -105,8 +106,34 @@
         </form>
      </div>
 
+
+     <!-- Cash Out -->
+     <div id="cash-out" style="display: none;">
+        <h1 class="my-5 mx-1 font-bold">Cash Out</h1>
+         <form action="" class="bg-white rounded-2xl p-8"  >
+            
+            <div>
+                <label for="" class="font-semibold mt-2">Agent Number</label><br>
+        <input id="agent-number" type="text" placeholder="Enter 11 digit number" class="input w-full bg-[#f4f5f7] mt-2 rounded-3xl mb-3" /></div>
+            <div>
+                <label for="" class="font-semibold">Amount</label><br>
+        <input id="cashout-amount" type="text" placeholder="Enter amount to withdraw" class="input bg-[#f4f5f7] mt-2 mb-3 rounded-3xl  w-full" />
+            </div>
+            <div>
+                <label for="" class="font-semibold">Pin Number</label><br>
+        <input id="pin-number-cashout" type="text" placeholder="Enter 4 digit pin number" class="input bg-[#f4f5f7] mt-2 rounded-3xl w-full" />
+            </div>
+
+             <button id="withdow-btn" type="button" class="btn bg-[#0874f2] text-white mt-5 w-full rounded-3xl ">Withdraw Money</button>
+        </form>
+
+
+
+
 </div>
 
+
+</div>
 
 <script src="home.js"></script>
 </body>
